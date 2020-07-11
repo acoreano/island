@@ -7,18 +7,17 @@ body {width: 100%;height: 100%;
   flex-wrap: nowrap;
   position: relative;
 }
-.writing {
+.writing {background:linear-gradient(to bottom right, red, blue,  yellow);
   flex: 1;
   transform: skewX(-10deg);
   border-radius: 55px;
-  clip-path: polygon(0, 20deg);
+  clip-path: polygon();
   align-self: center;
   justify-self: center;
 }
 .pic1 {
-  flex: 3;
-  position: relative;
-  right: -300px;
+  flex: 1;
+  position: relative;;
   filter: drop-shadow(40px 40px 40px rgba(200, 100, 117, 1));
 }
 .president {
@@ -79,10 +78,8 @@ span {
   background-color: tan;}*/
 
 .container1{width:100%;display: flex;flex-direction: row;flex-wrap: nowrap;}
-
-  .star {
-    flex: 1;width: 300px;background-color: black;height:300px;}/*
-  background-color: orange;clip-path: polygon(
+.star{width:250px;height:250px;
+background-color: orange;clip-path: polygon(
     50% 0%,
     61% 35%,
     98% 35%,
@@ -95,7 +92,7 @@ span {
     39% 35%
   );
   animation-name: dance;
-  animation-duration: 5s;}*/
+  animation-duration: 5s;}
 
   
 @keyframes move {
