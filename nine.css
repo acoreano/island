@@ -1,0 +1,157 @@
+body {
+  width: 100vw;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.writing {
+  flex: 1;
+  transform: skewX(-10deg);
+  border-radius: 55px;
+  clip-path: polygon(0, 20deg);
+  align-self: center;
+  justify-self: center;
+}
+.pic1 {
+  flex: 3;
+  position: relative;
+  right: -300px;
+  filter: drop-shadow(40px 40px 40px rgba(200, 100, 117, 1));
+}
+.president {
+  clip-path: circle(45%);
+}
+
+.first > h1 .wrapper {
+  border-style: solid;
+  border-color: sienna;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container {
+  flex: 1;
+  position: relative;
+  border-style: solid;
+  height: 400px;
+  width: 300px;
+  color: black;
+  background-color: aqua;
+  text-transform: uppercase;
+  animation-name: move;
+  animation-duration: 5s;
+}
+
+.small-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: growth;
+  animation-duration: 5s;
+  width: 200px;
+  height: 150px;
+  border-style: solid;
+  color: black;
+  border-width: 10px;
+}
+span {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  height: 100px;
+  background-color: springgreen;
+  color: tomato;
+  font-weight: 800;
+  border-radius: 20px;
+  animation-name: roller;
+  animation-duration: 2.5s;
+  box-shadow: 20px 20px inset teal;
+  cursor: pointer;
+}
+
+/*.btn:hover {
+  background-color: yellow;transform: translateY(-10px);transition-duration: .5s;
+}
+.btn:active {
+  background-color: violet;transform: translateY(-5px);
+}
+.btn:visited {
+  background-color: tan;}*/
+
+.container1 {
+  flex: 1;
+  background-color: orange;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation-name: dance;
+  animation-duration: 5s;
+}
+@keyframes move {
+  from {
+    background-color: brown;
+  }
+
+  to {
+    background-color: coral;
+  }
+}
+
+@keyframes dance {
+  0% {
+    opacity: 1;
+    background-color: blue;
+    transform: translatex(-800px);
+  }
+
+  100% {
+    opacity: 1;
+    color: blue;
+    transform: translatex(50px);
+  }
+}
+@keyframes roller {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes growth {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(2);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(4);
+  }
+}
