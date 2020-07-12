@@ -1,13 +1,33 @@
-body {width: 100%;height: 100%;
+body {margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.first {width: 100%;
+.menu {margin-top: 0;padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: sans-serif;
+  color:white;
+  background-color: darkblue;height: 25px;align-items: center;
+}
+
+.menu  a:hover { color: darkorange;}
+a {text-decoration: none;color: white;}
+
+.first {
+  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
 }
-.writing {background:linear-gradient(to bottom right, red, blue,  yellow);
+.writing {
+  background: linear-gradient(to bottom right, red, blue, yellow);
   flex: 1;
   transform: skewX(-10deg);
   border-radius: 55px;
@@ -17,18 +37,22 @@ body {width: 100%;height: 100%;
 }
 .pic1 {
   flex: 1;
-  position: relative;;
+  position: relative;
   filter: drop-shadow(40px 40px 40px rgba(200, 100, 117, 1));
 }
 .president {
   clip-path: circle(45%);
 }
 
-.container {position: relative;
-  display:flex;flex-direction: column;flex-wrap: wrap;
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border-style: solid;
-  
-  width: 50vw;height: 100vh;
+
+  width: 50vw;
+  height: 100vh;
   color: black;
   background-color: aqua;
   text-transform: uppercase;
@@ -56,7 +80,10 @@ span {
   transform: translate(-50%, -50%);
 }
 
-.btn {position: absolute;top:0px;left:0px;
+.btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   height: 100px;
   background-color: springgreen;
   color: tomato;
@@ -77,9 +104,16 @@ span {
 .btn:visited {
   background-color: tan;}*/
 
-.container1{width:100%;display: flex;flex-direction: row;flex-wrap: nowrap;}
-.star{width:250px;height:250px;
-background-color: orange;clip-path: polygon(
+.container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.star {
+  width: 250px;
+  height: 250px;
+  background-color: orange;
+  clip-path: polygon(
     50% 0%,
     61% 35%,
     98% 35%,
@@ -92,9 +126,9 @@ background-color: orange;clip-path: polygon(
     39% 35%
   );
   animation-name: dance;
-  animation-duration: 5s;}
+  animation-duration: 5s;
+}
 
-  
 @keyframes move {
   from {
     background-color: brown;
