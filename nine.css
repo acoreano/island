@@ -26,15 +26,16 @@ a {text-decoration: none;color: white;}
   flex-wrap: nowrap;
   position: relative;
 }
-.writing {
+.writing {height: 400px;text-align: center;position: relative;
   background: linear-gradient(to bottom right, red, blue, yellow);
   flex: 1;
-  transform: skewX(-10deg);
   border-radius: 55px;
-  clip-path: polygon();
+  /*clip-path: polygon(50% 0, 100% 100%, 0% 100% );*/
+
   align-self: center;
   justify-self: center;
 }
+
 .pic1 {
   flex: 1;
   position: relative;
