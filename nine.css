@@ -109,6 +109,10 @@ span {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
+.front{flex:1;}
+
+.front1 {Width:300px;}
 .star {
   width: 250px;
   height: 250px;
